@@ -20,12 +20,13 @@
 </head>
 <body>
 <main class="container my-5" role="main">
-  <h1 id="form-title">User Registration</h1>
-  <form id="userForm" novalidate aria-labelledby="form-title">
-
+  <div class="col-sm-8" style="margin: 0 auto;">
+    
+  <form id="userForm" class="form bg-light text-light p-4" novalidate aria-labelledby="form-title">
+    <h1 id="form-title" class="text-dark" style="text-align: center ; ">User Registration</h1>
     <!-- First Name -->
-    <div class="mb-3">
-      <label for="firstName" class="form-label">First Name</label>
+    <div class="mb-3 ">
+      <label for="firstName" class="form-label text-dark text-dark">First Name</label>
       <input type="text" class="form-control" id="firstName" name="firstName"
              aria-describedby="firstNameHelp" pattern="^[A-Za-z]+$" maxlength="50">
       <div id="firstNameHelp" class="form-text">Only letters allowed. No spaces or special characters.</div>
@@ -34,7 +35,7 @@
 
     <!-- Last Name -->
     <div class="mb-3">
-      <label for="lastName" class="form-label">Last Name</label>
+      <label for="lastName" class="form-label text-dark">Last Name</label>
       <input type="text" class="form-control" id="lastName" name="lastName"
              aria-describedby="lastNameHelp" pattern="^[A-Za-z]+$" maxlength="50">
       <div id="lastNameHelp" class="form-text">Only letters allowed. No spaces or special characters.</div>
@@ -43,7 +44,7 @@
 
     <!-- Date of Birth -->
     <div class="mb-3">
-      <label for="dob" class="form-label">Date of Birth <span class="text-danger">*</span></label>
+      <label for="dob" class="form-label text-dark">Date of Birth <span class="text-danger">*</span></label>
       <input type="text" class="form-control" id="dob" name="dob"
              required aria-required="true" aria-describedby="dobHelp" placeholder="05-APR-2000">
       <div id="dobHelp" class="form-text">Format: dd-MMM-yyyy (e.g., 05-APR-2000). You must be at least 18 years old.</div>
@@ -52,7 +53,7 @@
 
     <!-- Phone Number -->
     <div class="mb-3">
-      <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+      <label for="phone" class="form-label text-dark">Phone Number <span class="text-danger">*</span></label>
       <input type="text" class="form-control" id="phone" name="phone"
              aria-describedby="phoneHelp" required aria-required="true" maxlength="15" inputmode="numeric">
       <div id="phoneHelp" class="form-text">Digits only. Max 15 characters.</div>
@@ -61,7 +62,7 @@
 
     <!-- Email -->
     <div class="mb-3">
-      <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+      <label for="email" class="form-label text-dark">Email <span class="text-danger">*</span></label>
       <input type="email" class="form-control" id="email" name="email"
              required aria-required="true" aria-describedby="emailHelp" inputmode="email">
       <div id="emailHelp" class="form-text">Format: username@domain.com</div>
@@ -70,7 +71,7 @@
 
     <!-- Website -->
     <div class="mb-3">
-      <label for="website" class="form-label">Website</label>
+      <label for="website" class="form-label text-dark">Website</label>
       <input type="text" class="form-control" id="website" name="website"
              aria-describedby="websiteHelp" pattern="^www\.[A-Za-z0-9\-]+\.[A-Za-z]{2,}$">
       <div id="websiteHelp" class="form-text">Must start with www. and contain a valid domain extension.</div>
@@ -78,8 +79,11 @@
     </div>
 
     <!-- Submit -->
-    <button type="submit" class="btn btn-primary" aria-label="Submit form">Submit</button>
+     <div class="col-sm-12" style="text-align: center;">
+        <button type="submit" class="btn btn-primary" aria-label="Submit form">Submit</button>
+    </div>
   </form>
+  </div>
 </main>
 
 <!-- JS Dependencies -->
